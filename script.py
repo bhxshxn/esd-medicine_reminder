@@ -4,8 +4,8 @@ import pytz
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 
-client = Client("AC7c58a0165033e2a0c723126107ce03a8",
-                "2b8e4bb9b478fed92c16d9e985fa3a40")
+client = Client("AC5b2bc9a7cde14639bdec576bb47f23ae",
+                "be1d07503187fc8fe8bdfab9db2c4fde")
 
 
 print("Enter time as HH:MM(24 Hour-Format)")
@@ -25,7 +25,7 @@ m = a[3:len(a)+1]
 
 def send():
     client.messages.create(to=data[2],
-                           from_="+15868002793",
+                           from_="+15106613164",
                            body=data[1])
 
 
